@@ -1,3 +1,5 @@
+#!/bin/bash
+
 VERSION=1.2.1
 
 RED='\e[31m'
