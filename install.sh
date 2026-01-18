@@ -228,7 +228,7 @@ fi
 
 cd /opt
 
-sudo git clone https://github.com/infiniteremote/rustdesk-api-server.git
+sudo git clone https://github.com/armandoguty/rustdesk-api-server.git
 
 cd rustdesk-api-server
 
