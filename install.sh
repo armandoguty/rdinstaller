@@ -372,7 +372,10 @@ string64rev=$(echo -n "$string64" | rev)
 
 echo "$string64rev"
 
-wget -O /opt/rustdesk-api-server/static/configs/rustdesk-licensed-$string64rev.exe https://github.com/rustdesk/rustdesk/releases/download/1.3.8/rustdesk-1.3.8-x86_64.exe 
+# Download latest version of RustDesk Client
+RDCLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk/releases/latest -s | grep "tag_name"| awk '{print substr($2, 2, length($2)-2) }')
+
+wget -O /opt/rustdesk-api-server/static/configs/rustdesk-licensed-$string64rev.exe https://github.com/rustdesk/rustdesk/releases/download/${RDCLATEST}/rustdesk-${RDCLATEST}-x86_64.exe 
 
 sed -i "s|secure-string|${string64rev}|g" /opt/rustdesk-api-server/api/templates/installers.html
 sed -i "s|UniqueKey|${key}|g" /opt/rustdesk-api-server/api/templates/installers.html
