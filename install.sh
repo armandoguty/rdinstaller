@@ -120,7 +120,7 @@ cd /var/lib/rustdesk-server/ || exit 1
 
 
 # Download latest version of RustDesk
-RDLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk-server/releases/latest -s | grep "tag_name"| awk -F'"' '{print $4}')
+RDLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk-server/releases/latest -s | grep "tag_name"| awk -F '"' '{print $4}')
 
 echo "Installing RustDesk Server"
 if [ "${ARCH}" = "x86_64" ] ; then
@@ -372,7 +372,7 @@ string64rev=$(echo -n "$string64" | rev)
 echo "$string64rev"
 
 # Download latest version of RustDesk Client
-RDCLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk/releases/latest -s | grep "tag_name"| awk -F'"' '{print $4}')
+RDCLATEST=$(curl https://api.github.com/repos/rustdesk/rustdesk/releases/latest -s | grep "tag_name"| awk -F '"' '{print $4}')
 
 wget -O /opt/rustdesk-api-server/static/configs/rustdesk-licensed-$string64rev.exe https://github.com/rustdesk/rustdesk/releases/download/${RDCLATEST}/rustdesk-${RDCLATEST}-x86_64.exe 
 
