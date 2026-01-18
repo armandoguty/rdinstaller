@@ -1,33 +1,3 @@
-#!/bin/bash -e
-
-#
-#      ▌  ▗           ▗  ▌    ▌     ▌ 
-# ▌▌▛▌▛▌▀▌▜▘█▌▄▖▛▘▌▌▛▘▜▘▛▌█▌▛▘▙▘  ▛▘▛▌
-# ▙▌▙▌▙▌█▌▐▖▙▖  ▌ ▙▌▄▌▐▖▙▌▙▖▄▌▛▖▗ ▄▌▌▌
-#   ▌                                 
-#                   infiniteremote.com
-#
-#
-# This script is provided "as is", without warranty
-# of any kind. By using this script, you accept full
-# responsibility for its deployment and security.
-#
-# Copyright        : All rights reserved!
-# License          : GNU Affero General Public License v3.0
-# Repository url   : https://github.com/infiniteremote/installer
-# Author           : codiflow
-# Filename         : update-rustdesk.sh
-# Created at       : 2024-11-09
-# Last changed at  : 2025-04-22
-# Version          : 1.2.1
-# Description      : Interactive updater for RustDesk components
-#                    written for the RustDesk fork 'Infinite Remote'
-#
-# Usage            : Just execute the script, all relevant components
-#                    will be updated automatically. You will be asked
-#                    before the update of RustDesk components (and the
-#                    custom client scripts) is being performed
-
 VERSION=1.2.1
 
 RED='\e[31m'
