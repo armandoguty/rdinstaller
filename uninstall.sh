@@ -20,7 +20,7 @@ sudo rm /usr/bin/hbbr
 sudo rm -rf /var/lib/rustdesk-server
 sudo rm -rf /var/log/rustdesk-server
 
-# Remove InfiniteRemote files and services
+# Remove Rustdesk server files and services
 echo "Removing Rustdesk server files and services"
 sudo systemctl stop rustdesk-api
 sudo systemctl disable rustdesk-api
@@ -29,8 +29,8 @@ sudo systemctl daemon-reload
 sudo rm -rf /opt/rustdesk-api-server
 sudo rm -rf /var/log/rustdesk-server-api
 
-# Remove nginx and Python virtual environment for InfiniteRemote
-echo "Removing nginx and certbot for InfiniteRemote"
+# Remove nginx and Python virtual environment for Rustdesk server
+echo "Removing nginx and certbot for Rustdesk server"
 if [ "$(uname -s)" == "Linux" ]; then
     if command -v apt > /dev/null; then
         sudo apt -y remove nginx python3-certbot-nginx
