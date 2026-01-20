@@ -197,18 +197,6 @@ step_2_update_client () {
 is_rustdesk_installed
 
 # Introduction
-echo " "
-echo -e "${BLUE}      ▌  ▗           ▗  ▌    ▌     ▌ "
-echo -e " ▌▌▛▌▛▌▀▌▜▘█▌▄▖▛▘▌▌▛▘▜▘▛▌█▌▛▘▙▘  ▛▘▛▌"
-echo -e " ▙▌▙▌▙▌█▌▐▖▙▖  ▌ ▙▌▄▌▐▖▙▌▙▖▄▌▛▖▗ ▄▌▌▌"
-echo -e "   ▌                                 "
-echo -e "                   infiniteremote.com"
-echo " "
-echo -e " Script version:   ${YELLOW}${VERSION}${BLUE}"
-echo -e " Architecture:     ${YELLOW}${ARCH}${BLUE}"
-echo -e " Author:           ${YELLOW}codiflow${NC}"
-echo " "
-echo -e "${BLUE}This script updates RustDesk ${YELLOW}server${BLUE} first (STEP 1) and asks to update RustDesk ${YELLOW}client config version strings${BLUE} afterwards (STEP 2).${NC}"
 
 echo " "
 read -r -p $'Press [ENTER] to start updating RustDesk components now or quit using [CTRL] + [C]...\n\n'
