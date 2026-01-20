@@ -48,7 +48,6 @@ fi
 echo "Removing firewall rules"
 if command -v ufw > /dev/null; then
     sudo ufw delete allow 21115:21119/tcp
-    sudo ufw delete allow 22/tcp
     sudo ufw delete allow 21116/udp
 fi
 
