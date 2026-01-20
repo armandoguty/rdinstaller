@@ -7,4 +7,4 @@
 - A Fully Qualified Domain Name (FQDN) pointing to your public IP, e.g., InfiniteRemote.example.com.
 
 ### How to install
-Check the wiki https://github.com/armandoguty/rdinstaller/wiki
+Check the wiki https://github.com/armandoguty/rdinstaller/wiki/Installation
