@@ -21,7 +21,7 @@ sudo rm -rf /var/lib/rustdesk-server
 sudo rm -rf /var/log/rustdesk-server
 
 # Remove InfiniteRemote files and services
-echo "Removing InfiniteRemote files and services"
+echo "Removing Rustdesk server files and services"
 sudo systemctl stop rustdesk-api
 sudo systemctl disable rustdesk-api
 sudo rm /etc/systemd/system/rustdesk-api.service
@@ -51,4 +51,4 @@ if command -v ufw > /dev/null; then
     sudo ufw delete allow 21116/udp
 fi
 
-echo "InfiniteRemote and RustDesk have been removed successfully."
+echo "RustDesk server has been removed successfully."
